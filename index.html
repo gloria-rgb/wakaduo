@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <me ta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form-Annec Industries</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="hi.js"></script>
+</head>
+<body>
+    <H1>REGISTRATION FORM</H1>
+    <form action="" >
+        <fieldset>
+            <legend>BIODATA</legend>
+            <br>
+           <label for="name">Name:</label> 
+           <input type="text" name="name">
+<label for="email">Email Address:</label>
+<input type="email" name="email" placeholder="name@email.com">
+<br>
+<br>
+<label for="Gender">Gender:</label>
+<label id="gender">
+<input type="radio" 
+    name="gender" 
+      value="male"> Male
+</label>
+<label>
+    <input type="radio" name="gender" value="female"> Female
+</label>
+<label>
+    <input type="radio" name="gender" value="Other"> Other
+</label>
+<br>
+<br>
+<label for="password">Password:</label>
+<input type="text" name="password" placeholder="at least 6-character length">
+        </fieldset>
+            <fieldset>
+                <legend>2023 BOOTCAMP REGISTRATION</legend>
+                <br>
+<label for="age">Age:</label>
+<input type="number"name="age" min="18" max="25">
+<label for="question">
+    <h4>Why do you want to be part of this bootcamp?</h4>
+</label>
+<textarea name="question" id="question" cols="30" rows="20"></textarea>
+            </fieldset>
+            <button onclick="showAlert()" type="submit" id="submitform">SUBMIT</button>
+        <script>
+            function showAlert(){
+                alert("Saved Successfully")
+            }
+        </script>    
+    </form>
+</body>
+</html>
